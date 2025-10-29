@@ -1,0 +1,25 @@
+* {
+	font-weight: 100;
+}
+body {
+	background-color: tomato;
+	margin: 0;
+}
+nav {
+	background-color: black;
+	width: 100vw;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.table-container {
+	color: black;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 20px;
+	border-radius: 5px;
+	padding-bottom: 20px;
+}
