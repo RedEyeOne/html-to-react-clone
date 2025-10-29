@@ -1,9 +1,8 @@
 import { NavTab } from "./componant library/NavTab";
 import { TopCharacterTable } from "./componant library/TopCharacterTable";
-import { people } from "./../people.js";
+import { people } from "./assets/people.js";
 import { Card } from "./componant library/Card.jsx";
 import "./css/App.css";
-import "./css/Cards.css";
 
 function App() {
 	return (
@@ -11,16 +10,17 @@ function App() {
 			<nav>
 				<h1>Fullmetal Alchemist</h1>
 				<div>
-					<NavTab text="about us" />
+					<NavTab text={"about\nus"} />
 					<NavTab text="info" />
-					<NavTab text="support us" />
+					<NavTab text={"support\nus"} />
 				</div>
 			</nav>
-			<sectoin className="table-container">
+			<section className="table-container">
 				<h4>Top Characters</h4>
 				<TopCharacterTable />
-			</sectoin>
+			</section>
 
+			{/* loop over people and create cards dynamicly  */}
 			<section className="cards-container">
 				{people.map((person, index) => (
 					<Card

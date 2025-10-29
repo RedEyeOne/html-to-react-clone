@@ -16,7 +16,7 @@
 	border: 3px solid black;
 	border-radius: 5px;
 	width: 200px;
-	min-height: 250px;
+	min-height: 302px;
 	position: relative;
 }
 .card img {
@@ -47,5 +47,5 @@
 	margin-top: 0;
 }
 .card #4 .name-box {
-	background-color: #0000;
+	background-color: #00000;
 }
