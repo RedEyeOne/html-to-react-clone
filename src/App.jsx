@@ -22,10 +22,10 @@ function App() {
 			</sectoin>
 
 			<section className="cards-container">
-				{people.map((person) => (
+				{people.map((person, index) => (
 					<Card
 						key={person.id}
-						id={person.id}
+						personIndex={index}
 						name={person.name}
 						nickname={person.nickname}
 						personImg={person.personImg}

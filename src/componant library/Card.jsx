@@ -2,9 +2,10 @@ import React, { Component } from "react";
 
 export class Card extends Component {
 	render() {
-		const { name, nickname, personImg, description } = this.props; // destructure props
+		const { name, nickname, personImg, description, personIndex } =
+			this.props; // destructure props
 		return (
-			<div className="card">
+			<div className="card" id={personIndex}>
 				<img src={personImg} />
 				<div className="name-box">
 					<h3>{name}</h3>

@@ -14,7 +14,7 @@ table {
 /* === Cells === */
 td {
 	padding: 0.75rem 1rem;
-	border: 1px solid white;
+	border: 1px solid gray;
 }
 
 /* === Row striping === */
@@ -30,5 +30,5 @@ th {
 	padding: 0.75rem 1rem;
 	font-weight: bold;
 	border-bottom: 2px solid #000;
-	border: 1px solid white;
+	border: 1px solid gray;
 }
