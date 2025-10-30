@@ -6,8 +6,8 @@ export class Card extends Component {
 		const { name, nickname, personImg, description, personIndex } =
 			this.props; // destructure props
 		return (
-			<div className="card" id={personIndex}>
-				<img src={personImg} />
+			<div className={`card card-${{ personIndex }}`}>
+				<img src={personImg} alt="" />
 				<div className="name-box">
 					<h3>{name}</h3>
 					{nickname && <h4>{nickname}</h4>}

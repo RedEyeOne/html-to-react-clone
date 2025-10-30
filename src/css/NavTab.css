@@ -10,7 +10,11 @@ button {
 	vertical-align: baseline;
 	color: white;
 }
-
+.button-container {
+	width: 275px;
+	display: flex;
+	justify-content: space-between;
+}
 button:hover {
 	background-color: tomato;
 }

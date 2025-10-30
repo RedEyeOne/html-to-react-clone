@@ -46,6 +46,6 @@
 .description {
 	margin-top: 0;
 }
-.card #4 .name-box {
-	background-color: #00000;
+.cards-container .card:nth-child(5) .name-box {
+	background-color: #0000;
 }

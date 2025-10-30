@@ -9,10 +9,10 @@ function App() {
 		<>
 			<nav>
 				<h1>Fullmetal Alchemist</h1>
-				<div>
-					<NavTab text={"about\nus"} />
+				<div className="button-container">
+					<NavTab text={"about us"} />
 					<NavTab text="info" />
-					<NavTab text={"support\nus"} />
+					<NavTab text={"support us"} />
 				</div>
 			</nav>
 			<section className="table-container">
