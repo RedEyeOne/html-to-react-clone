@@ -1,4 +1,5 @@
 export type Person = {
+	id: number;
 	name: string;
 	personImg: string;
 	nickname?: string;
@@ -6,6 +7,7 @@ export type Person = {
 };
 export const people = [
 	{
+		id: 1,
 		name: "Alex Louis Armstrong",
 		personImg:
 			"https://www.giantbomb.com/a/uploads/original/1/19821/694167-armstrong.jpg",
@@ -14,6 +16,7 @@ export const people = [
 			"Major Armstrong may look big and strong, but deep down he's the biggest sap in the entire show ",
 	},
 	{
+		id: 2,
 		name: "Alfonse Elrich",
 		personImg:
 			"https://upload.wikimedia.org/wikipedia/en/7/7c/AlphonseElricArakawa.jpg",
@@ -21,6 +24,7 @@ export const people = [
 			"Alphonse is a walking suit of armor on a quest to find his real body ",
 	},
 	{
+		id: 3,
 		name: "Edward Elrich",
 		nickname: "The Fullmetal Alchemist",
 		personImg:
@@ -29,6 +33,7 @@ export const people = [
 			"Edward is a master alchemist and our main character... just don't call him short ",
 	},
 	{
+		id: 4,
 		name: "Greed",
 		nickname: "Greed",
 		personImg:
@@ -37,6 +42,7 @@ export const people = [
 			"Greed is one of the seven deadly sins Homunculii. He's the most 'on our side' of all of them. ",
 	},
 	{
+		id: 5,
 		name: "Nina Tucker",
 		personImg:
 			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST9dK-tXCnVxbSeSJuCKmiX0zUbnCEV1ss54DeOYgXUHSE0WB23TAUD4a3itwFbzJ9fkg&usqp=CAU",
@@ -44,6 +50,7 @@ export const people = [
 			"Nina is an adorable little girl! If you've watched FMA you know... ",
 	},
 	{
+		id: 6,
 		name: "Riza Hawkeye",
 		nickname: "Hawkeye",
 		personImg:
@@ -52,6 +59,7 @@ export const people = [
 			"Hawkeye is Colonel Mustang's loyal assistant, and one of the strongest non-alchemist characters in the show ",
 	},
 	{
+		id: 7,
 		name: "Solf J. Kimblee",
 		nickname: "The Crimson Alchemist",
 		personImg:
@@ -59,13 +67,15 @@ export const people = [
 		description: "Kimblee suckkkkkssss, seriously he's not very nice ",
 	},
 	{
+		id: 8,
 		name: "Tim Marcoh",
 		nickname: "Dr. Marcoh",
-		personImg: "",
+		personImg: "empty",
 		description:
 			"Dr. Marcoh did some F**ked up S**t in the war on ishval, but his redemption arc is strong ",
 	},
 	{
+		id: 9,
 		name: "Winry Rockbell",
 		personImg:
 			"https://s3.amazonaws.com/comicgeeks/characters/avatars/36066.jpg?t=1668454278",

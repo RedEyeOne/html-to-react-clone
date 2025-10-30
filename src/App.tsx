@@ -1,8 +1,8 @@
-import { NavTab } from "./componant library/NavTab";
-import { TopCharacterTable } from "./componant library/TopCharacterTable";
-import { people } from "./assets/people.js";
-import { Card } from "./componant library/Card.jsx";
-import { Person } from "./assets/people.js";
+import { NavTab } from "./componant library/NavTab.jsx";
+import { TopCharacterTable } from "./componant library/TopCharacterTable.jsx";
+import { people } from "./assets/people";
+import { Card } from "./componant library/Card";
+import { Person } from "./assets/people";
 import "./css/App.css";
 
 function App() {
@@ -25,6 +25,7 @@ function App() {
 			<section className="cards-container">
 				{people.map((person: Person, index: number) => (
 					<Card
+						key={index}
 						personIndex={index}
 						name={person.name}
 						nickname={person.nickname}

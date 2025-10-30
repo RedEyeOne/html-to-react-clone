@@ -11,9 +11,9 @@ button {
 	color: white;
 }
 .button-container {
-	width: 275px;
+	width: 248px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 button:hover {
 	background-color: tomato;
