@@ -1,3 +1,9 @@
+export type Person = {
+	name: string;
+	personImg: string;
+	nickname?: string;
+	description: string;
+};
 export const people = [
 	{
 		name: "Alex Louis Armstrong",
@@ -55,6 +61,7 @@ export const people = [
 	{
 		name: "Tim Marcoh",
 		nickname: "Dr. Marcoh",
+		personImg: "",
 		description:
 			"Dr. Marcoh did some F**ked up S**t in the war on ishval, but his redemption arc is strong ",
 	},

@@ -1,12 +1,20 @@
 import React, { Component } from "react";
 import "/src/css/Cards.css";
 
-export class Card extends Component {
+interface CardProps {
+	name: string;
+	nickname?: string;
+	personImg: string;
+	description: string;
+	personIndex: number;
+}
+
+export class Card extends Component<CardProps> {
 	render() {
 		const { name, nickname, personImg, description, personIndex } =
 			this.props; // destructure props
 		return (
-			<div className={`card card-${{ personIndex }}`}>
+			<div className={`card card-${personIndex}`}>
 				<img src={personImg} alt="" />
 				<div className="name-box">
 					<h3>{name}</h3>
