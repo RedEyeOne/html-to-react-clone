@@ -15,7 +15,7 @@ export class Card extends Component<CardProps> {
 			this.props;
 		return (
 			<div className={`card card-${personIndex}`}>
-				{personImg !== "" ? <img src={personImg} alt="empty" /> : null}
+				{personImg !== "" ? <img src={personImg} alt={name} /> : null}
 				<div className="name-box">
 					<h3>{name}</h3>
 					{nickname && <h4>{nickname}</h4>}
