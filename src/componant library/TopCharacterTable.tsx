@@ -25,7 +25,6 @@ export function TopCharacterTable({ people }: TableProps) {
 						key={person.id}
 						className={index % 2 === 0 ? "dark" : "light"}
 					>
-						{" "}
 						<td>{person.leaderboardName}</td>
 						<td>{person.skillset}</td>
 						<td>{person.votes}</td>
