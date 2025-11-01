@@ -1,22 +1,12 @@
 import "/src/css/TopCharacterTable.css";
+import { people } from "../assets/people";
 
+const peopleWithVotes = people
+	.filter((person) => person.votes != null && person.votes > 0)
+	.sort((a, b) => (b.votes ?? 0) - (a.votes ?? 0));
+
+console.log(peopleWithVotes);
 export function TopCharacterTable() {
-	const people = [
-		{
-			name: "Alfonse Elrich",
-			skillset: "Being Loveable, Alchemy",
-			votes: 110,
-		},
-		{
-			name: 'Edward Elrich "Full Metal Alchemist"',
-			skillset: "Alchemy, Human Transmutation",
-			votes: 100,
-		},
-		{ name: "Hawkeye", skillset: "Sniper, Loyal AF", votes: 95 },
-		{ name: "Mj. Armstrong", skillset: "Alchemy, Muscles", votes: 94 },
-		{ name: "Nina", skillset: "Loving Dogs, Being Adorable", votes: 93 },
-	];
-
 	return (
 		<table>
 			<thead>
@@ -27,7 +17,7 @@ export function TopCharacterTable() {
 				</tr>
 			</thead>
 			<tbody>
-				{people.map((person, index) => (
+				{peopleWithVotes.map((person, index) => (
 					<tr key={index}>
 						<td>{person.name}</td>
 						<td>{person.skillset}</td>
