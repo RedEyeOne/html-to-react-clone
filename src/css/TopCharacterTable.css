@@ -11,22 +11,18 @@ table {
 	border-radius: 5px;
 	font-family: arial, sans-serif;
 }
-
 /* === Cells === */
 td {
 	padding: 0.5em 1rem;
 	border: 1px solid gray;
 }
-
 /* === Row striping === */
 .light {
 	background-color: rgba(255, 255, 255, 0.7);
 }
-
 .dark {
 	background-color: rgba(128, 128, 128, 0.2);
 }
-
 /* === Header === */
 th {
 	background-color: #000;

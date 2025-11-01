@@ -1,8 +1,8 @@
+import { people } from "./assets/people";
+import { Person } from "./assets/people";
 import { NavTab } from "./componant library/NavTab.jsx";
 import { TopCharacterTable } from "./componant library/TopCharacterTable.jsx";
-import { people } from "./assets/people";
 import { Card } from "./componant library/Card";
-import { Person } from "./assets/people";
 import "./css/App.css";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
 				<TopCharacterTable people={people} />
 			</section>
 
-			{/* loop over people and create cards dynamicly  */}
+			{/* loop over people data and create cards dynamicly  */}
 			<section className="cards-container">
 				{people.map((person: Person, index: number) => (
 					<Card

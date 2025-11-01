@@ -1,6 +1,5 @@
 import "/src/css/TopCharacterTable.css";
-import { Person } from "../assets/people"; // ✅ import your type, not the array
-
+import { Person } from "../assets/people";
 interface TableProps {
 	people: Person[];
 }
