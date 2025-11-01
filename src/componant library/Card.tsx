@@ -12,7 +12,7 @@ interface CardProps {
 export class Card extends Component<CardProps> {
 	render() {
 		const { name, nickname, personImg, description, personIndex } =
-			this.props; // destructure props
+			this.props;
 		return (
 			<div className={`card card-${personIndex}`}>
 				{personImg !== "" ? <img src={personImg} alt="empty" /> : null}
