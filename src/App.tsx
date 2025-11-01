@@ -18,7 +18,7 @@ function App() {
 			</nav>
 			<section className="table-container">
 				<h4>Top Characters</h4>
-				<TopCharacterTable />
+				<TopCharacterTable people={people} />
 			</section>
 
 			{/* loop over people and create cards dynamicly  */}

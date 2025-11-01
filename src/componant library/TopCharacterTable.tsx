@@ -1,12 +1,15 @@
 import "/src/css/TopCharacterTable.css";
-import { people } from "../assets/people";
+import { Person } from "../assets/people"; // ✅ import your type, not the array
 
-const peopleWithVotes = people
-	.filter((person) => person.votes != null && person.votes > 0)
-	.sort((a, b) => (b.votes ?? 0) - (a.votes ?? 0));
+interface TableProps {
+	people: Person[];
+}
 
-console.log(peopleWithVotes);
-export function TopCharacterTable() {
+export function TopCharacterTable({ people }: TableProps) {
+	const topFivePeople = people
+		.filter((p) => p.votes != null && p.votes > 0)
+		.sort((a, b) => (b.votes ?? 0) - (a.votes ?? 0))
+		.slice(0, 5);
 	return (
 		<table>
 			<thead>
@@ -17,9 +20,13 @@ export function TopCharacterTable() {
 				</tr>
 			</thead>
 			<tbody>
-				{peopleWithVotes.map((person, index) => (
-					<tr key={index}>
-						<td>{person.name}</td>
+				{topFivePeople.map((person, index) => (
+					<tr
+						key={person.id}
+						className={index % 2 === 0 ? "dark" : "light"}
+					>
+						{" "}
+						<td>{person.leaderboardName}</td>
 						<td>{person.skillset}</td>
 						<td>{person.votes}</td>
 					</tr>

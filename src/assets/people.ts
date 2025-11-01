@@ -28,7 +28,7 @@ export const people = [
 			"https://upload.wikimedia.org/wikipedia/en/7/7c/AlphonseElricArakawa.jpg",
 		description:
 			"Alphonse is a walking suit of armor on a quest to find his real body ",
-		leaderboardName: 'Edward Elrich "Full Metal Alchemist',
+		leaderboardName: "Alfonse Elrich",
 		skillset: "Being Loveable, Alchemy",
 		votes: 110,
 	},
@@ -40,6 +40,7 @@ export const people = [
 			"https://www.pngkit.com/png/detail/952-9524083_edward-elric-photo-edwardelric7-full-body-edward-elric.png",
 		description:
 			"Edward is a master alchemist and our main character... just don't call him short ",
+		leaderboardName: `Edward Elrich "Full Metal Alchemist"`,
 		skillset: "Alchemy, Human Transmutation",
 		votes: 100,
 	},
